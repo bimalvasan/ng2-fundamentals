@@ -19,4 +19,8 @@ export class EventListComponent{
             country: 'England'
         }
     }
+
+    onEventClicked(data){
+        console.log('Received: '+ data);
+    }
 }

@@ -1,5 +1,5 @@
 <div>
     <h1>Upcoming Angular 2 Events</h1>
     <hr />
-    <event-thumbnail [event]="eventLst"></event-thumbnail>
+    <event-thumbnail (eventClick)="onEventClicked($event)" [event]="eventLst"></event-thumbnail>
 </div>
