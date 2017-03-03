@@ -11,4 +11,10 @@ export class EventThumbnailComponent{
    onClickMe(){
        this.eventClick.emit(this.event.name)
    }
+
+   myProperty: any = 'Helloooo....'
+
+   logData(){
+       console.log('My Data');
+   }
 }
