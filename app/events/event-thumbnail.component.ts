@@ -21,4 +21,18 @@ export class EventThumbnailComponent {
             bold: isEarlyStart
         }
     }
+
+    getStartTimeStyle() {
+        const isEarlyStart = this.event && this.event.time === '8:00 am'
+
+        if (isEarlyStart) {
+            return {
+                color: '#003300',
+                'font-weight': 'bold'
+            }
+        }
+        else {
+            return {}
+        }
+    }
 }
