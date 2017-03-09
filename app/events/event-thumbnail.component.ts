@@ -22,7 +22,7 @@ export class EventThumbnailComponent {
         }
     }
 
-    getStartTimeStyle() {
+    getStartTimeStyle(): any {
         const isEarlyStart = this.event && this.event.time === '8:00 am'
 
         if (isEarlyStart) {
